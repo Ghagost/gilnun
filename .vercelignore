@@ -1,0 +1,8 @@
+# Local-only files (the Vercel CLI already skips node_modules, .next, .git, .vercel, .env.local).
+.tools
+.env
+.env.*
+!.env.example
+test-results
+playwright-report
+길눈-주소.txt

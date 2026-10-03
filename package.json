@@ -1,0 +1,38 @@
+{
+  "name": "gilnun",
+  "version": "2.0.0",
+  "private": true,
+  "description": "길눈 — 일본 여행 지도 + AI(ChatGPT·Claude·Gemini) + 실시간 카메라 길안내",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "e2e": "next build && playwright test --grep-invert shots",
+    "shots": "playwright test tests/e2e/shots.spec.ts",
+    "check": "tsc --noEmit && vitest run && next build && playwright test --grep-invert shots"
+  },
+  "dependencies": {
+    "@googlemaps/js-api-loader": "2.1.3",
+    "idb-keyval": "6.3.0",
+    "maplibre-gl": "5.24.0",
+    "next": "16.3.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zustand": "5.0.15"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/google.maps": "3.66.4",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "pretendard": "1.3.9",
+    "typescript": "5.9.3",
+    "vitest": "5.0.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
